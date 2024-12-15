@@ -27,7 +27,7 @@ private void insertarDatos() {
         return;
     }
 
-    // Query para insertar datos
+
     String query = "INSERT INTO pacientejl (nombre, edad, direccion, nohistorial, enfermedad) VALUES (?, ?, ?, ?, ?)";
 
     try (Connection con = new Conexion("gestionmedica").getConexion(); PreparedStatement ps = con.prepareStatement(query)) {
